@@ -8,3 +8,21 @@ html(lang="es")
         link(rel="stylesheet", href="./assets/css/style.css")
         script(src="./assets/js/main.js") 
     body 
+        //- ? ENCABEZADO
+        header.header#header 
+            nav.nav.container
+                a(href="#").nav__logo
+                    img(src="./assets/img/trick-treat5-img.png", alt="calabazita").nav__logo-img
+                    | Halloween
+                .nav__menu#nav-menu
+                    ul.nav__list
+                        li.nav__item: a(href="#home").nav__link.active-link Home 
+                        li.nav__item: a(href="#about").nav__link About
+                        li.nav__item: a(href="#trick").nav__link Candy
+                        li.nav__item: a(href="#new").nav__link New
+                        a(href="#").button.button--ghost Support
+                    .nav__close#nav-close
+                        i.bx.bx-x
+                    img(src="./assets/img/nav-img.png", alt="arañita").nav__img
+                .nav__toggle#nav-toggle 
+                    i.bx.bx-grid-alt 
