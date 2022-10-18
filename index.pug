@@ -6,6 +6,7 @@ html(lang="es")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Halloween 
         link(rel="stylesheet", href="./assets/css/style.css")
+        link(rel="icon", href="./assets/img/trick-treat5-img.png")
         script(src="./assets/js/main.js") 
     body 
         //- ? ENCABEZADO
@@ -26,3 +27,254 @@ html(lang="es")
                     img(src="./assets/img/nav-img.png", alt="arañita").nav__img
                 .nav__toggle#nav-toggle 
                     i.bx.bx-grid-alt 
+        //- ? PRINCIPAL
+        main.main
+            //- todo MENU PRINCIPAL
+            section.home.container#home
+                .swiper.home-swiper
+                    .swiper-wrapper
+                        //- ! SLIDER 1 - 2 - 3//
+                        section.swiper-slide
+                            .home__content.grid
+                                .home__group
+                                    img(src="./assets/img/footer1-img.png", alt="slider-1").home__img
+                                    .home__indicator 
+                                    .home__details-img 
+                                        h4.home__details-title the Labu "Reiza"
+                                        span.home__details-subtitle La calabaza viva 
+                                .home__data 
+                                    h3.home__subtitle #1 Fantasma más aterrador 
+                                    h1.home__title UOOOO <br> TRUCO O <br> TRATO!! 
+                                    p.home__description Hi, I'm Reiza, people call me "El Labu". I am currently trying to learn something new, building my own bike with parts made only in Malaysia.
+                                    .home__buttons
+                                        a(href="#").button Reservar ahora 
+                                        a(href="#").buttons--link.button--flex Audio grabado 
+                                            i.bx.bx-right-arrow-alt.button_icon
+                        section.swiper-slide
+                            .home__content.grid
+                                .home__group
+                                    img(src="assets/img/home2-img.png", alt="slider-1").home__img
+                                    .home__indicator 
+                                    .home__details-img 
+                                        h4.home__details-title Adino & Grahami
+                                        span.home__details-subtitle No hay palabras para describirlos 
+                                .home__data 
+                                    h3.home__subtitle #2 top Best duo 
+                                    h1.home__title UOOOO <br> TRUCO O <br> TRATO!! 
+                                    p.home__description Adino steals cotton candy from his brother and eats them all in one bite, a hungry beast. Grahami can no longer contain his anger towards Adino.
+                                    .home__buttons
+                                        a(href="#").button Book Now 
+                                        a(href="#").buttons--link.button--flex Track Record 
+                                            i.bx.bx-right-arrow-alt.button_icon
+                        section.swiper-slide
+                            .home__content.grid
+                                .home__group
+                                    img(src="assets/img/home3-img.png", alt="slider-1").home__img
+                                    .home__indicator 
+                                    .home__details-img 
+                                        h4.home__details-title Captain Sem 
+                                        span.home__details-subtitle Veteran Spooky Ghost 
+                                .home__data 
+                                    h3.home__subtitle #3 Top Scariest Ghost  
+                                    h1.home__title UOOOO <br> TRUCO O <br> TRATO!! 
+                                    p.home__description  In search for cute little puppy, Captain Sem has come back from his tragic death. With his hogwarts certified power he promise to be a hero for all of ghostkind.
+                                    .home__buttons
+                                        a(href="#").button Book Now 
+                                        a(href="#").buttons--link.button--flex Track Record 
+                                            i.bx.bx-right-arrow-alt.button_icon
+                    .swiper-pagination
+            //- todo CATEGORIAS
+            section.section.category
+                h2.section__title Susto Favorito <br /> Categorias
+                .category__container.container.grid
+                    .category__data
+                        img(src="assets/img/category1-img.png", alt="category_img").category__img
+                        h3.category__title Fantasmas
+                        p.category__description Choose the ghosts, the scariest there are.
+
+                    .category__data
+                        img(src="assets/img/category2-img.png", alt="category_img").category_img
+                        h3.category__title Calabazas
+                        p.category__description You look at the scariest pumpkins there is.
+
+                    .category__data
+                        img(src="assets/img/category3-img.png", alt="category_img").category__img
+                        h3.category__title Sombrero de bruja
+                        p.category__description Pick the most stylish witch hats out there.
+            //- todo ACERCA DE
+            section.section.about#about 
+                .about__container.container.grid 
+                    .about__data 
+                        h2.section__title.about__title Acerca de Halloween <br>Night
+                        p.about__description Night of all the saints, or all the dead, is celebrated on October 31 and it is a very fun international celebration, this celebration comes from ancient origins, and is already celebrated by everyone.
+                        a(href="#").button Saber más
+                    img(src="assets/img/about-img.png", alt="").about__img
+            //- todo TRUCO O TRATO
+            section.section.trick#trick 
+                h2.section__title Truto o trato 
+                .trick__container.container.grid 
+                    .trick__content 
+                        img(src="assets/img/trick-treat1-img.png", alt="").trick__img
+                        h3.trick__title Toffee 
+                        span.trick__subtitle Candy  
+                        span.trick__price $11.99
+                        button.button.trick__button
+                            i.bx.bx-cart-alt.trick__icon 
+                    .trick__content 
+                        img(src="assets/img/trick-treat2-img.png", alt="").trick__img
+                        h3.trick__title Bone
+                        span.trick__subtitle Accessory 
+                        span.trick__price $8.99
+                        button.button.trick__button
+                            i.bx.bx-cart-alt.trick__icon 
+                    .trick__content 
+                        img(src="assets/img/trick-treat3-img.png", alt="").trick__img
+                        h3.trick__title Scarecrow
+                        span.trick__subtitle Accessory
+                        span.trick__price $15.99
+                        button.button.trick__button
+                            i.bx.bx-cart-alt.trick__icon 
+                    .trick__content 
+                        img(src="assets/img/trick-treat4-img.png", alt="").trick__img
+                        h3.trick__title Candy Cane 
+                        span.trick__subtitle Candy  
+                        span.trick__price $7.99
+                        button.button.trick__button
+                            i.bx.bx-cart-alt.trick__icon 
+                    .trick__content 
+                        img(src="assets/img/trick-treat5-img.png", alt="").trick__img
+                        h3.trick__title Pumpkin 
+                        span.trick__subtitle Candy  
+                        span.trick__price $19.99
+                        button.button.trick__button
+                            i.bx.bx-cart-alt.trick__icon 
+                    .trick__content 
+                        img(src="assets/img/trick-treat6-img.png", alt="").trick__img
+                        h3.trick__title Ghost 
+                        span.trick__subtitle Accessory 
+                        span.trick__price $17.99
+                        button.button.trick__button
+                            i.bx.bx-cart-alt.trick__icon 
+            //- todo DESCUENTOS
+            section.section.discount 
+                .discount__container.container.grid 
+                    .discount__data 
+                        h2.discount_title 50% de descuento <br>Sobre nuevos productos 
+                        a(href="#").button Ir a nuevo 
+                    img(src="assets/img/discount-img.png", alt="").discount__img
+            //- todo NUEVOS ITEMS
+            section.section.new#new 
+                h2.section__title Los recién llegados 
+                .new__container.container 
+                    .swiper.new-swiper 
+                        .swiper-wrapper 
+                            .new__content.swiper-slide 
+                                .new__tag New 
+                                img(src="assets/img/new1-img.png", alt="").new__img
+                                h3.new__title Haunted House 
+                                span.new__subtitle Accessory 
+                                .new_prices 
+                                    span.new__prices $14.99
+                                    span.new_discount $29.99
+                                button.button.new__button
+                                    i.bx.bx-cart-alt.new__icon 
+                            .new__content.swiper-slide 
+                                .new__tag New 
+                                img(src="assets/img/new2-img.png", alt="").new__img
+                                h3.new__title Halloween Candle 
+                                span.new__subtitle Accessory 
+                                .new_prices 
+                                    span.new__prices $11.99
+                                    span.new_discount $21.99
+                                button.button.new__button
+                                    i.bx.bx-cart-alt.new__icon 
+                            .new__content.swiper-slide 
+                                .new__tag New 
+                                img(src="assets/img/new3-img.png", alt="").new__img
+                                h3.new__title Witch Hat
+                                span.new__subtitle Accessory 
+                                .new_prices 
+                                    span.new__prices $4.99
+                                    span.new_discount $9.99
+                                button.button.new__button
+                                    i.bx.bx-cart-alt.new__icon 
+                            .new__content.swiper-slide 
+                                .new__tag New 
+                                img(src="assets/img/new4-img.png", alt="").new__img
+                                h3.new__title Rip
+                                span.new__subtitle Accessory 
+                                .new_prices 
+                                    span.new__prices $24.99
+                                    span.new_discount $44.99
+                                button.button.new__button
+                                    i.bx.bx-cart-alt.new__icon 
+                            .new__content.swiper-slide 
+                                .new__tag New 
+                                img(src="assets/img/new5-img.png", alt="").new__img
+                                h3.new__title Terrifying Crystal Ball 
+                                span.new__subtitle Accessory 
+                                .new_prices 
+                                    span.new__prices $5.99
+                                    span.new_discount $12.99
+                                button.button.new__button
+                                    i.bx.bx-cart-alt.new__icon 
+                            .new__content.swiper-slide 
+                                .new__tag New 
+                                img(src="assets/img/new6-img.png", alt="").new__img
+                                h3.new__title Witch Broom 
+                                span.new__subtitle Accessory 
+                                .new_prices 
+                                    span.new__prices $7.99
+                                    span.new_discount $14.99
+                                button.button.new__button
+                                    i.bx.bx-cart-alt.new__icon 
+            //- todo SUSCRIBIRSE
+            section.section.newsletter 
+                .newsletter__container.container 
+                    h2.section__title Our Newsletter 
+                    p.newsletter__description Promotion new products and sales. Directly to your inbox
+                    form(action="").newsletter__form
+                        input(type="text", placeholder="Enter your email").newsletter__form
+                        button.button Suscribete 
+        //- ? PIE DE PAGINA
+        footer.footer.section
+            .footer__container.container.grid 
+                .footer__content 
+                    a(href="#").footer__logo
+                        img(src="assets/img/logo.png", alt="").footer__logo-img
+                        | Halloween
+                    p.footer__description Enjoy the scariest night <br>of your life.
+                    .footer__social 
+                        a(href="https://www.facebook.com/", target="_blank").footer__social-link
+                            i.bx.bxl-facebook 
+                        a(href="https://www.instagram.com/", target="_blank").footer__social-link
+                            i.bx.bxl-instagram-alt
+                        a(href="https://www.twitter.com/", target="_blank").footer__social-link
+                            i.bx.bxl-twitter
+                .footer__content
+                    h3.footer__title Our Services 
+                    ul.footer__links 
+                        li
+                            a(href="#").footer__link Pricing
+                        li
+                            a(href="#").footer__link  Discounts
+                        li
+                            a(href="#").footer__link Shipping mode
+                .footer__content
+                    h3.footer__title Our Company 
+                    ul.footer__links 
+                        li
+                            a(href="#").footer__link Blog
+                        li
+                            a(href="#").footer__link  About us
+                        li
+                            a(href="#").footer__link Our mision
+            span.footer__copy &#169; Halloween Page
+            img(src="assets/img/footer1-img.png", alt="").footer__img-one
+            img(src="assets/img/footer2-img.png", alt="").footer__img-two 
+        a(href="#").scrollup#scroll-up
+            i.bx.bx-up-arrow-alt.scrollup__icon
+        //- ! Scroll para que se revelen los elementos de forma suave
+        script(src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js")
+        //- ! Deslizar elementos en una lista
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")  
