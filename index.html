@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halloween </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/trick-treat5-img.png">
-    <script src="./assets/js/main.js"> </script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/trick-treat5-img.png">
   </head>
   <body> 
     <header class="header" id="header"> 
@@ -40,7 +41,7 @@
                   <h3 class="home__subtitle">#1 Fantasma más aterrador </h3>
                   <h1 class="home__title">UOOOO <br> TRUCO O <br> TRATO!! </h1>
                   <p class="home__description">Hi, I'm Reiza, people call me "El Labu". I am currently trying to learn something new, building my own bike with parts made only in Malaysia.</p>
-                  <div class="home__buttons"><a class="button" href="#">Reservar ahora </a><a class="buttons--link button--flex" href="#">Audio grabado <i class="bx bx-right-arrow-alt button_icon"></i></a></div>
+                  <div class="home__buttons"><a class="button" href="#">Reservar ahora </a><a class="button--link button--flex" href="#">Audio grabado <i class="bx bx-right-arrow-alt button_icon"></i></a></div>
                 </div>
               </div>
             </section>
@@ -56,7 +57,7 @@
                   <h3 class="home__subtitle">#2 top Best duo </h3>
                   <h1 class="home__title">UOOOO <br> TRUCO O <br> TRATO!! </h1>
                   <p class="home__description">Adino steals cotton candy from his brother and eats them all in one bite, a hungry beast. Grahami can no longer contain his anger towards Adino.</p>
-                  <div class="home__buttons"><a class="button" href="#">Book Now </a><a class="buttons--link button--flex" href="#">Track Record <i class="bx bx-right-arrow-alt button_icon"></i></a></div>
+                  <div class="home__buttons"><a class="button" href="#">Book Now </a><a class="button--link button--flex" href="#">Track Record <i class="bx bx-right-arrow-alt button_icon"></i></a></div>
                 </div>
               </div>
             </section>
@@ -72,7 +73,7 @@
                   <h3 class="home__subtitle">#3 Top Scariest Ghost  </h3>
                   <h1 class="home__title">UOOOO <br> TRUCO O <br> TRATO!! </h1>
                   <p class="home__description"> In search for cute little puppy, Captain Sem has come back from his tragic death. With his hogwarts certified power he promise to be a hero for all of ghostkind.</p>
-                  <div class="home__buttons"><a class="button" href="#">Book Now </a><a class="buttons--link button--flex" href="#">Track Record <i class="bx bx-right-arrow-alt button_icon"></i></a></div>
+                  <div class="home__buttons"><a class="button" href="#">Book Now </a><a class="button--link button--flex" href="#">Track Record <i class="bx bx-right-arrow-alt button_icon"></i></a></div>
                 </div>
               </div>
             </section>
@@ -87,7 +88,7 @@
             <h3 class="category__title">Fantasmas</h3>
             <p class="category__description">Choose the ghosts, the scariest there are.</p>
           </div>
-          <div class="category__data"><img class="category_img" src="assets/img/category2-img.png" alt="category_img">
+          <div class="category__data"><img class="category__img" src="assets/img/category2-img.png" alt="category_img">
             <h3 class="category__title">Calabazas</h3>
             <p class="category__description">You look at the scariest pumpkins there is.</p>
           </div>
@@ -137,7 +138,7 @@
       <section class="section discount"> 
         <div class="discount__container container grid"> 
           <div class="discount__data"> 
-            <h2 class="discount_title">50% de descuento <br>Sobre nuevos productos </h2><a class="button" href="#">Ir a nuevo </a>
+            <h2 class="discount__title">50% de descuento <br>Sobre nuevos productos </h2><a class="button" href="#">Ir a nuevo </a>
           </div><img class="discount__img" src="assets/img/discount-img.png" alt="">
         </div>
       </section>
@@ -149,13 +150,13 @@
               <div class="new__content swiper-slide"> 
                 <div class="new__tag">New </div><img class="new__img" src="assets/img/new1-img.png" alt="">
                 <h3 class="new__title">Haunted House </h3><span class="new__subtitle">Accessory </span>
-                <div class="new_prices"> <span class="new__prices">$14.99</span><span class="new_discount">$29.99</span></div>
+                <div class="new__prices"> <span class="new__price">$14.99</span><span class="new__discount">$29.99</span></div>
                 <button class="button new__button"><i class="bx bx-cart-alt new__icon"> </i></button>
               </div>
               <div class="new__content swiper-slide"> 
                 <div class="new__tag">New </div><img class="new__img" src="assets/img/new2-img.png" alt="">
                 <h3 class="new__title">Halloween Candle </h3><span class="new__subtitle">Accessory </span>
-                <div class="new_prices"> <span class="new__prices">$11.99</span><span class="new_discount">$21.99</span></div>
+                <div class="new__prices"> <span class="new__prices">$11.99</span><span class="new__discount">$21.99</span></div>
                 <button class="button new__button"><i class="bx bx-cart-alt new__icon"> </i></button>
               </div>
               <div class="new__content swiper-slide"> 
@@ -191,7 +192,7 @@
           <h2 class="section__title">Our Newsletter </h2>
           <p class="newsletter__description">Promotion new products and sales. Directly to your inbox</p>
           <form class="newsletter__form" action="">
-            <input class="newsletter__form" type="text" placeholder="Enter your email">
+            <input class="newsletter__input" type="text" placeholder="Enter your email">
             <button class="button">Suscribete </button>
           </form>
         </div>
@@ -202,6 +203,14 @@
         <div class="footer__content"> <a class="footer__logo" href="#"><img class="footer__logo-img" src="assets/img/logo.png" alt="">Halloween</a>
           <p class="footer__description">Enjoy the scariest night <br>of your life.</p>
           <div class="footer__social"> <a class="footer__social-link" href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"> </i></a><a class="footer__social-link" href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram-alt"></i></a><a class="footer__social-link" href="https://www.twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a></div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">About </h3>
+          <ul class="footer__links"> 
+            <li><a class="footer__link" href="#">About Us</a></li>
+            <li><a class="footer__link" href="#">Factures</a></li>
+            <li><a class="footer__link" href="#">News</a></li>
+          </ul>
         </div>
         <div class="footer__content">
           <h3 class="footer__title">Our Services </h3>
@@ -223,5 +232,6 @@
     </footer><a class="scrollup" href="#" id="scroll-up"><i class="bx bx-up-arrow-alt scrollup__icon"></i></a>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="assets/js/main.js"> </script>
   </body>
 </html>

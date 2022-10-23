@@ -5,9 +5,10 @@ html(lang="es")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Halloween 
-        link(rel="stylesheet", href="./assets/css/style.css")
-        link(rel="icon", href="./assets/img/trick-treat5-img.png")
-        script(src="./assets/js/main.js") 
+        link(href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+        link(rel="stylesheet", href="assets/css/style.css")
+        link(rel="icon", href="assets/img/trick-treat5-img.png")
     body 
         //- ? ENCABEZADO
         header.header#header 
@@ -48,7 +49,7 @@ html(lang="es")
                                     p.home__description Hi, I'm Reiza, people call me "El Labu". I am currently trying to learn something new, building my own bike with parts made only in Malaysia.
                                     .home__buttons
                                         a(href="#").button Reservar ahora 
-                                        a(href="#").buttons--link.button--flex Audio grabado 
+                                        a(href="#").button--link.button--flex Audio grabado 
                                             i.bx.bx-right-arrow-alt.button_icon
                         section.swiper-slide
                             .home__content.grid
@@ -64,7 +65,7 @@ html(lang="es")
                                     p.home__description Adino steals cotton candy from his brother and eats them all in one bite, a hungry beast. Grahami can no longer contain his anger towards Adino.
                                     .home__buttons
                                         a(href="#").button Book Now 
-                                        a(href="#").buttons--link.button--flex Track Record 
+                                        a(href="#").button--link.button--flex Track Record 
                                             i.bx.bx-right-arrow-alt.button_icon
                         section.swiper-slide
                             .home__content.grid
@@ -80,7 +81,7 @@ html(lang="es")
                                     p.home__description  In search for cute little puppy, Captain Sem has come back from his tragic death. With his hogwarts certified power he promise to be a hero for all of ghostkind.
                                     .home__buttons
                                         a(href="#").button Book Now 
-                                        a(href="#").buttons--link.button--flex Track Record 
+                                        a(href="#").button--link.button--flex Track Record 
                                             i.bx.bx-right-arrow-alt.button_icon
                     .swiper-pagination
             //- todo CATEGORIAS
@@ -93,7 +94,7 @@ html(lang="es")
                         p.category__description Choose the ghosts, the scariest there are.
 
                     .category__data
-                        img(src="assets/img/category2-img.png", alt="category_img").category_img
+                        img(src="assets/img/category2-img.png", alt="category_img").category__img
                         h3.category__title Calabazas
                         p.category__description You look at the scariest pumpkins there is.
 
@@ -159,7 +160,7 @@ html(lang="es")
             section.section.discount 
                 .discount__container.container.grid 
                     .discount__data 
-                        h2.discount_title 50% de descuento <br>Sobre nuevos productos 
+                        h2.discount__title 50% de descuento <br>Sobre nuevos productos 
                         a(href="#").button Ir a nuevo 
                     img(src="assets/img/discount-img.png", alt="").discount__img
             //- todo NUEVOS ITEMS
@@ -173,9 +174,9 @@ html(lang="es")
                                 img(src="assets/img/new1-img.png", alt="").new__img
                                 h3.new__title Haunted House 
                                 span.new__subtitle Accessory 
-                                .new_prices 
-                                    span.new__prices $14.99
-                                    span.new_discount $29.99
+                                .new__prices 
+                                    span.new__price $14.99
+                                    span.new__discount $29.99
                                 button.button.new__button
                                     i.bx.bx-cart-alt.new__icon 
                             .new__content.swiper-slide 
@@ -183,9 +184,9 @@ html(lang="es")
                                 img(src="assets/img/new2-img.png", alt="").new__img
                                 h3.new__title Halloween Candle 
                                 span.new__subtitle Accessory 
-                                .new_prices 
+                                .new__prices 
                                     span.new__prices $11.99
-                                    span.new_discount $21.99
+                                    span.new__discount $21.99
                                 button.button.new__button
                                     i.bx.bx-cart-alt.new__icon 
                             .new__content.swiper-slide 
@@ -234,7 +235,7 @@ html(lang="es")
                     h2.section__title Our Newsletter 
                     p.newsletter__description Promotion new products and sales. Directly to your inbox
                     form(action="").newsletter__form
-                        input(type="text", placeholder="Enter your email").newsletter__form
+                        input(type="text", placeholder="Enter your email").newsletter__input
                         button.button Suscribete 
         //- ? PIE DE PAGINA
         footer.footer.section
@@ -251,6 +252,15 @@ html(lang="es")
                             i.bx.bxl-instagram-alt
                         a(href="https://www.twitter.com/", target="_blank").footer__social-link
                             i.bx.bxl-twitter
+                .footer__content
+                    h3.footer__title About 
+                    ul.footer__links 
+                        li
+                            a(href="#").footer__link About Us
+                        li
+                            a(href="#").footer__link Factures
+                        li
+                            a(href="#").footer__link News
                 .footer__content
                     h3.footer__title Our Services 
                     ul.footer__links 
@@ -278,3 +288,4 @@ html(lang="es")
         script(src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js")
         //- ! Deslizar elementos en una lista
         script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")  
+        script(src="assets/js/main.js") 
